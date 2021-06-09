@@ -1,0 +1,63 @@
+.cover {
+  height: 100vh;
+  background-color: black;
+}
+.cover .left {
+  max-height: 30%;
+}
+.cover .left .details {
+  color: white;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-top: 30%;
+}
+@media screen and (max-width: 760px) {
+  .cover .left .details {
+    padding-top: 3em;
+  }
+}
+.cover .left .details .title {
+  font-size: 3em;
+}
+@media screen and (max-width: 300px) {
+  .cover .left .details .title {
+    font-size: 1.5em;
+  }
+}
+.cover .left .details .subtitle {
+  font-size: 5em;
+  padding-left: 0.25em;
+}
+@media screen and (max-width: 300px) {
+  .cover .left .details .subtitle {
+    font-size: 3em;
+  }
+}
+.cover .left .details .category {
+  font-size: 2em;
+  letter-spacing: 4px;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-left: 2em;
+}
+@media screen and (max-width: 300px) {
+  .cover .left .details .category {
+    font-size: 1em;
+  }
+}
+.cover .left .details .description {
+  display: flex;
+  padding-top: 2em;
+}
+.cover .left .details .description .first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+}
+.cover .left .details .description .second {
+  border-left: 1px solid white;
+  padding-left: 1em;
+  text-align: justify;
+}
+/*# sourceMappingURL=Cover.css.map */

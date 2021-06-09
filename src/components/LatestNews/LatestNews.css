@@ -1,0 +1,120 @@
+.latest-news-container{
+    background-color: white;
+    padding: 2em 4em;
+}
+
+.latest-news-container__top{
+    margin: 1em;
+}
+
+.latest-news-container__top:hover{
+    cursor: pointer;
+}
+
+.latest-news-container__top:hover .latest-news-container__top__bottom .anticon{
+    visibility:visible;
+    opacity:1;
+}
+
+.latest-news-container__top .ant-col{
+    margin: 0.5em 0;
+}
+
+.latest-news-container__top img{
+    width: 100%;
+    height: auto;
+}
+
+.latest-news-container__top__span{
+    margin: 0.5em 0;
+    font-weight: 500;
+}
+
+.latest-news-container__top__bottom{
+    width: 100%;
+    margin: 1em 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #757575;
+}
+
+.latest-news-container__top__bottom svg{
+    padding-right: 1em;
+    height: 120%;
+    width: 150%;
+    color: #f759ab;
+}
+
+.latest-news-container__top__bottom .anticon{
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.latest-news-container__top h2{
+    font-weight: bold;
+}
+
+.latest-news-container__top p{
+    text-align: justify;
+}
+
+.latest-news-container__middle{
+    margin: 2em 1em;
+}
+
+.latest-news-container__middle:hover{
+    cursor: pointer;
+}
+
+.latest-news-container__middle:hover .latest-news-container__middle__details__bottom .anticon{
+    visibility:visible;
+    opacity:1;
+}
+
+.latest-news-container__middle h3{
+    padding-top: 0.25em;
+    font-weight: bold;
+}
+
+.latest-news-container__middle__img{
+    width: 100%;
+    height: auto;
+}
+
+.latest-news-container__middle__details__title{
+    color: #292929;
+    font-weight: 500;
+}
+
+.latest-news-container__middle__details__title img{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.latest-news-container__middle__details__bottom{
+    font-weight: normal;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1em;
+    align-items: center;
+    color: #757575;
+}
+
+.latest-news-container__middle__details__bottom svg{
+    padding-right: 1em;
+    height: 120%;
+    width: 120%;
+    color: #f759ab;
+}
+
+
+.latest-news-container__middle__details__bottom .anticon{
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+}

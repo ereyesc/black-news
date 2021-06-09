@@ -1,0 +1,116 @@
+.all-news-wrapper {
+  background: #f4f7f6;
+  width: 100%;
+  justify-content: space-around;
+  padding: 5em 2em;
+}
+
+.all-news-wrapper__item {
+    position: relative;
+  background: white;
+  margin-bottom: 3em;
+}
+
+.all-news-wrapper__item__img-wrapper {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.all-news-wrapper__item__img-content {
+  background-image: url(https://media.timeout.com/images/101602611/image.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ant-btn {
+    font-weight: 300;
+    display: none;
+    border-radius: 1.5em;
+    padding: 0 2em;
+    font-size: 1.125em;
+    color: black;
+    background: white;
+    border: none;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+}
+
+.ant-btn:hover{
+    color: black;
+    background: white;
+    border: none;
+}
+
+.all-news-wrapper__item__img-wrapper:hover .all-news-wrapper__item__img-content,
+.all-news-wrapper__item__img-wrapper:focus
+  .all-news-wrapper__item__img-content {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.all-news-wrapper__item__img-wrapper:hover
+  .all-news-wrapper__item__img-content:before,
+.all-news-wrapper__item__img-wrapper:focus
+  .all-news-wrapper__item__img-content:before {
+  display: block;
+}
+
+.all-news-wrapper__item__img-wrapper:hover .ant-btn,
+.all-news-wrapper__item__img-wrapper:focus .ant-btn {
+  display: block;
+}
+
+.all-news-wrapper__item__img-content:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgba(0,0,0,0.2);
+}
+
+.all-news-wrapper__item__content{
+    background-color: white;
+    padding: 1em 1.5em;
+}
+
+.all-news-wrapper__item__content__desc{
+    padding: 1em 0;
+    font-weight:lighter;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-news-wrapper__item__content__desc span{
+    padding: 0.5em 0;
+}
+
+
+.all-news-wrapper__item__content img{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 0.5em;
+}

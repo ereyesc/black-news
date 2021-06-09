@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.middle-content-container{
+    justify-content: center;
+    height: 399px;
+    margin-top: 30px;
+}
+.offerts-text{
+    justify-content: center;
+}
+.offerts-text > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+.offerts-cards{
+    justify-content: center;
+}
+.best-offerts-card{
+    width: 25%;
+    margin: 10px;
+    padding: 0;
+}
+.best-offerts-card:hover{
+    cursor: pointer;
+}
+.best-offerts-card-image{
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.best-offerts-card-info{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card-info-top{
+    display: flex;
+    min-height: 50%;
+}
+.card-info-top-icon{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-info-top-icon svg{
+    height: 20px;
+    width: 20px;
+}
+.card-info-top-name{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card-info-top-name p{
+    margin: 0;
+    font-family: sans-serif;
+    color: gray;
+}
+.card-info-bottom{
+    display: flex;
+    height: 50%;
+    padding-left: 20%;
+    color: #FF7B59;
+}
+.card-info-bottom-text{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-weight: bold;
+}
+.card-info-bottom-text p{
+    margin: 0;
+}
+.card-info-bottom-icon{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #FF7B59;
+    margin-left: 5px;
+}
+.view-more-card{
+    width: 25%;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+.view-more-card:hover > .card-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    background: url(https://data.whicdn.com/images/149483143/original.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.card-info{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.card-info p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+}
+
+.card-info svg{
+    width: 25px;
+    height: 25px;
+}

@@ -1,0 +1,42 @@
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-panel .panel-info {
+  width: 230px;
+  height: auto;
+  border: 2px solid black;
+  padding: 1em;
+  text-align: center;
+  margin: 1em 0;
+}
+@media screen and (max-width: 767px) {
+  .right-panel .panel-info {
+    display: none;
+  }
+}
+.right-panel .panel-info h3 {
+  font-size: 1.5em;
+}
+.right-panel .panel-info p {
+  color: #8c8c8c;
+  font-size: 0.9em;
+}
+.right-panel .panel-info h4 {
+  font-weight: bold;
+}
+.right-panel .panel-info input {
+  margin-bottom: 1em;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.right-panel .panel-info input:focus {
+  box-shadow: none;
+}
+.right-panel .panel-info button {
+  border: none;
+  background-color: black;
+  margin-bottom: 1em;
+}
+/*# sourceMappingURL=RightPanel.css.map */

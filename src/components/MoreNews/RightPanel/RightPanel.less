@@ -1,0 +1,41 @@
+.right-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .panel-info{
+        width: 230px;
+        height: auto;
+        border: 2px solid black;
+        padding: 1em;
+        text-align: center;
+        margin: 1em 0;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+        h3{
+            font-size: 1.5em;
+        }
+        p{
+            color: #8c8c8c;
+            font-size: 0.9em;
+        }
+        h4{
+            font-weight: bold;
+        }
+        input{
+            margin-bottom: 1em;
+            border: none;
+            border-bottom: 1px solid black;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        button{
+            border: none;
+            background-color: black;
+            margin-bottom: 1em;
+        }
+    }
+}

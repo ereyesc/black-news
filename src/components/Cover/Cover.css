@@ -5,6 +5,9 @@
 .cover .left {
   max-height: 30%;
 }
+.cover .left:hover {
+  cursor: pointer;
+}
 .cover .left .details {
   color: white;
   flex-direction: column;

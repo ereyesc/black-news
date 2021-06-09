@@ -32,7 +32,7 @@
   transition: all 0.5s;
 }
 
-.ant-btn {
+/* .ant-btn {
     font-weight: 300;
     display: none;
     border-radius: 1.5em;
@@ -56,7 +56,7 @@
     color: black;
     background: white;
     border: none;
-}
+} */
 
 .all-news-wrapper__item__img-wrapper:hover .all-news-wrapper__item__img-content,
 .all-news-wrapper__item__img-wrapper:focus

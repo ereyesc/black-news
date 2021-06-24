@@ -1,0 +1,50 @@
+.footer-container {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 4em;
+}
+.footer-container .footer-col {
+  padding: 2em;
+}
+.footer-container h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+.footer-container h2 {
+  color: #bfbfbf;
+  font-size: 2em;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+.footer-container h3 {
+  color: #bfbfbf;
+  text-align: justify;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.footer-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-container li {
+  font-size: 1.2em;
+  color: #bfbfbf;
+  padding: 0.25em;
+}
+.footer-container li:first-child {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+.footer-bottom {
+  display: flex;
+  background-color: black;
+  color: #bfbfbf;
+  padding: 4em;
+}
+/*# sourceMappingURL=Footer.css.map */

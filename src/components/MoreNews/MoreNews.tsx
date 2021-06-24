@@ -1,4 +1,4 @@
-import { Row, Col, Button } from "antd";
+import { Row, Col, Button, Divider } from "antd";
 import RightPanel from './RightPanel';
 import "./MoreNews.css";
 
@@ -12,6 +12,7 @@ const MoreNews = () => {
     <Row className="more-news">
       <Col xs={24} md={16} lg={16}>
         {[1, 2, 3, 4, 5, 6].map((item) => (
+          <>
           <Col className="news-item">
             <Col style={imgStyle} span={10}></Col>
             <Col span={14} className="item-details">
@@ -33,7 +34,9 @@ const MoreNews = () => {
                 <Button type="primary">Read more</Button>
               </Col>
             </Col>
-          </Col>
+            </Col>
+            <Divider />
+          </>
         ))}
       </Col>
       <RightPanel />

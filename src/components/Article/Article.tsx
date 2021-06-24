@@ -1,51 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Row, Col } from "antd";
 import { useParams } from "react-router-dom";
-import 'tinymce/tinymce';
- import 'tinymce/icons/default';
- import 'tinymce/themes/silver';
- import 'tinymce/plugins/paste';
- import 'tinymce/plugins/link';
- import 'tinymce/plugins/image';
- import 'tinymce/plugins/table';
- import 'tinymce/skins/ui/oxide/skin.min.css';
- import 'tinymce/skins/ui/oxide/content.min.css';
- import 'tinymce/skins/content/default/content.min.css';
-import { Editor } from "@tinymce/tinymce-react";
+import NewArticle from "./NewArticle";
 import "./Article.css";
 
 interface ArticleRouteParams {
-  articleId: string
+  articleId: string;
 }
 
 const Article: React.FC<ArticleRouteParams> = () => {
   let { articleId } = useParams<ArticleRouteParams>();
-  const [contentEditor, setContentEditor] = useState<string>('');
-   const handleEditorChange = (content: string, editor: any) => {
-     console.log('Content was updated:', typeof content, content);
-     setContentEditor(content);
-   }
+  const [title, setTitle] = useState<string>("");
+  const [subtitle, setSubtitle] = useState<string>("");
+  const [contentEditor, setContentEditor] = useState<string>("");
+  const imgStyle = {
+    backgroundImage: `url("https://images.unsplash.com/photo-1592609931095-54a2168ae893?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80")`,
+    backgroundPosition: "center center no-repeat",
+    backgroundSize: "cover",
+    minHeight: "600px",
+  };
+  const handleTitleChange = (event: React.FormEvent<HTMLInputElement>) => {
+    setTitle((event.target as HTMLInputElement).value);
+  };
+  const handleSubtitleChange = (event: React.FormEvent<HTMLInputElement>) => {
+    setSubtitle((event.target as HTMLInputElement).value);
+  };
   return (
-    <Row>
-      Article {articleId}
-      <Editor
-         initialValue="<p>This is the initial content of the editor</p>"
-         init={{
-           skin: false,
-           content_css: false,
-           height: 500,
-           menubar: false,
-           plugins: [
-             'link image',
-             'table paste'
-           ],
-           toolbar:'undo redo | styleselect | forecolor | bold italic backcolor | alignleft aligncenter alignright alignjustify | outdent indent | link image'
-         }}
-         value={contentEditor}
-         onEditorChange={handleEditorChange}
+    <>
+      <NewArticle
+        contentEditor={contentEditor}
+        setContentEditor={setContentEditor}
+        title={title}
+        handleTitleChange={handleTitleChange}
+        subtitle={subtitle}
+        handleSubtitleChange={handleSubtitleChange}
       />
-      <div dangerouslySetInnerHTML={{ __html: contentEditor }} />
-    </Row>
+      <Row className="article-content">
+        <Col xs={22} md={18} lg={14}>
+          <Col span={20}>
+            <h1>{title}</h1>
+          </Col>
+          <Col>
+            <h2>{subtitle}</h2>
+          </Col>
+          <Col id="article-img" style={imgStyle}></Col>
+          <Col>
+            <div dangerouslySetInnerHTML={{ __html: contentEditor }} />
+          </Col>
+        </Col>
+      </Row>
+    </>
   );
 };
 
